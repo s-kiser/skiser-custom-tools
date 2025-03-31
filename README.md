@@ -1,1 +1,6 @@
-this will b instructions
+# s-kiser Custom Tools
+
+### Usage
+- install
+- update
+- uninstall
