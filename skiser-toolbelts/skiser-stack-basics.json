@@ -1,0 +1,51 @@
+{
+  "setup-git": {
+    "install git": "",
+    "name": "",
+    "email": ""
+  },
+  "tabby-terminal": {
+    "source": "https://github.com/Eugeny/tabby/releases/download/v1.0.209/tabby-1.0.209-linux-x64.deb",
+    "steps": "download, install"
+  },
+  "create-folders": {
+    "git": {},
+    "sandbox": {},
+    "vue": {},
+    ".icons": {},
+    ".themes": {}
+  },
+  "apt-packages": {
+    "flameshot": "sudo apt install flameshot -y",
+    "CopyQ": "sudo apt install copyq",
+    "git": "sudo apt install git",
+    "curl": "sudo apt install curl"
+  },
+  "WhiteSur": {
+    "source": "https://github.com/vinceliuice/WhiteSur-gtk-theme",
+    "unzip": "Downloads",
+    "install": "WhiteSur-gtk-theme-master/install.sh",
+    "set-applications-cinnamon": "gsettings set org.cinnamon.desktop.interface gtk-theme 'WhiteSur-Dark-solid'",
+    "set-applications-gnome": "gsettings set org.gnome.desktop.interface gtk-theme 'WhiteSur-Dark-solid'",
+    "set-desktop": "gsettings set org.cinnamon.theme name 'WhiteSur-Dark-solid'"
+  },
+  "FairyWren-icon-set": {
+    "source": "https://gitlab.com/aiyahm/FairyWren-Icons",
+    "unzip": "Downloads",
+    "folder": "FairyWren_Dark",
+    "move": ".icons",
+    "set-icons": "gsettings set org.cinnamon.desktop.interface icon-theme 'FairyWren_Dark'"
+  },
+  "custom-shortcuts": {
+    "terminal": {
+      "name": "tabby",
+      "command": "tabby",
+      "binding": "Ctrl+Alt+T"
+    },
+    "task-manager": {
+      "name": "task-manager",
+      "command": "gnome-system-monitor",
+      "binding": "Ctrl+Alt+M"
+    }
+  }
+}
