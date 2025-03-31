@@ -27,14 +27,14 @@ sudo mkdir -p $tool_dir
 
 # gitkeep
 program="gitkeep"
-sudo cp "$program.sh" "$tool_dir/$program.sh"
+sudo cp "skiser-git/skiser-$program.sh" "$tool_dir/$program.sh"
 sudo chmod 755 "$tool_dir/$program.sh"
 sudo chmod +x "$tool_dir/$program.sh"
 sudo ln -s "$tool_dir/$program.sh" "/usr/bin/$program"
 
 # ssh_add
-program="ssh_add"
-sudo cp "$program.sh" "$tool_dir/$program.sh"
+program="ssh-key"
+sudo cp "skiser-ssh/skiser-$program.sh" "$tool_dir/$program.sh"
 sudo chmod 755 "$tool_dir/$program.sh"
 sudo chmod +x "$tool_dir/$program.sh"
 sudo ln -s "$tool_dir/$program.sh" "/usr/bin/$program"
@@ -43,4 +43,4 @@ echo -e "\n$tool_dir/"
 ls -lah $tool_dir
 
 echo -e "\n/usr/bin/"
-ls -lah /usr/bin/ | grep "gitkeep\|ssh_add"
+ls -lah /usr/bin/ | grep "gitkeep\|ssh-key"
