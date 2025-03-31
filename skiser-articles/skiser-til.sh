@@ -1,0 +1,2 @@
+# When you run this script it will open a file in nano with the name you specify and when you save it, it will be added to the TIL Location you specify in the configuration of this file.
+# when you first run this script it should ask for your TIL files location, and then save that in a configuration file.
